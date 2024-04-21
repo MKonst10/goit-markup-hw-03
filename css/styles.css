@@ -14,6 +14,12 @@ ol {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -35,10 +41,13 @@ ol {
 
 .page-header-container {
   display: flex;
+  border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
 }
 
 .navigation {
   display: flex;
+  align-items: center;
 }
 
 body {
@@ -139,13 +148,8 @@ button {
 .our-service {
   background-color: #2e2f42;
   display: flex;
-}
-
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
-  padding-left: 316px;
-  padding-right: 316px;
 }
 
 .our-slogan {
@@ -188,9 +192,12 @@ button {
   color: #ffffff;
 }
 
+.features {
+  padding: 120px 0;
+}
+
 .features-list {
   display: flex;
-  padding: 120px 0;
   gap: 24px;
 }
 
@@ -204,6 +211,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-descr {
@@ -212,13 +220,15 @@ button {
   letter-spacing: 0.02em;
 }
 
-.team-section{
+.team-section {
   background-color: #f4f4fd;
 }
 
 .our-team {
   background-color: #f4f4fd;
   display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .our-service-title {
@@ -229,14 +239,12 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-photos {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-card {
@@ -244,11 +252,12 @@ button {
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   height: 380px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-info {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 .team-name {
@@ -258,6 +267,7 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .team-position {
@@ -267,13 +277,14 @@ button {
   text-align: center;
 }
 
-.portfolio-section {
-}
-
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px ;
+  gap: 48px 24px;
+}
+
+.our-portfolio {
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -285,11 +296,10 @@ button {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
-.portfolio-card-info{
+.portfolio-card-info {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
@@ -302,6 +312,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .portfolio-card-descr {
@@ -312,6 +323,7 @@ button {
 
 .footer {
   background: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-bottom {
@@ -323,6 +335,8 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .studio-footer-logo {
@@ -335,9 +349,4 @@ button {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  padding-top: 16px;
-}
-
-.page-footer {
-  padding: 100px 0;
 }
